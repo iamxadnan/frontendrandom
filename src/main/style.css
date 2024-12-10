@@ -1,0 +1,423 @@
+/* Global Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+  }
+  
+  thead {
+    background-color: #f0f0f0;
+  }
+  
+  th {
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  td {
+    padding: 10px;
+    text-align: left;
+    color: #555;
+    border-bottom: 1px solid #eee;
+  }
+  
+  tr:hover {
+    background-color: #f7f7f7;
+  }
+  
+  tr:last-child td {
+    border-bottom: none;
+  }
+  
+  th, td {
+    text-align: center;
+  }
+  
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Hide scrollbar but still allow scrolling */
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    overflow-x: hidden;
+    padding-top: 4.375rem; /* Reduced 100px to 70px */
+    
+}
+
+body::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Edge */
+}
+
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4.375rem; /* Reduced 100px to 70px */
+    display: flex;
+    justify-content: space-between;
+    position: static;
+    align-items: center;
+    padding: 0 0.875rem; /* Reduced 20px to 14px */
+    background-color: #fff;
+    z-index: 1000;
+    animation: slideInFromTop 0.5s ease-out;
+}
+
+.logo img {
+    width: 2.1875rem; /* Reduced 50px to 35px */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 3.75rem; /* Reduced 40px to 28px */
+    margin-top: 1.75rem; /* Reduced 40px to 28px */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1rem; /* Reduced 20px to 16px */
+    text-transform: uppercase;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+    animation-delay: 0.5s;
+}
+
+.sign-in-btn {
+    padding: 0.4375rem 0.875rem; /* Reduced 10px 20px to 7px 14px */
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0.875rem; /* Reduced 20px to 14px */
+    font-size: 0.875rem; /* Reduced 16px to 14px */
+}
+
+.hero {
+    margin-top: 00px;
+    text-align: center;
+    padding: 4.375rem 0.875rem; /* Reduced 100px 20px to 70px 14px */
+    background-color: #f7f7f7;
+    animation: slideInFromBottom 0.5s ease-out;
+    margin-bottom: 50px;
+    
+}
+
+.hero h1 {
+    font-family: 'DM Serif Display', serif; /* Apply DM Serif Display */
+    font-size: 5.5rem; /* Reduced 64px to 40px */
+    font-weight: bold;
+    margin-bottom: 0.4375rem; /* Reduced 10px to 7px */
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+    animation-delay: 1s;
+    margin-top: 3rem;
+    margin-left:-1rem;
+}
+
+.hero p {
+    color: #8b5e3c;
+    font-size: 1.125rem; 
+    margin-bottom: 1.575rem;
+    margin-top: 1.875rem; 
+}
+
+
+
+.dot {
+    height: 0.5625rem; 
+    width: 0.5625rem;
+    background-color: #333;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 0.25rem; 
+}
+
+.tabs {
+    margin: auto;
+    width: 70%;
+    background-color: transparent;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -2.1875rem; 
+    
+    
+    animation: slideInFromRight 0.5s ease-out;
+}
+
+.tab {
+    display: flex;
+    height: 2.1875rem; /* Reduced 50px to 35px */
+    position: absolute;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0);
+    
+}
+
+.tab button {
+    background-color: #888888;
+    border: none;
+    padding: 0.625rem 1.25rem; /* Reduced 15px 30px to 10px 20px */
+    cursor: pointer;
+    font-size: 1rem; /* Reduced 20px to 16px */
+    margin-right: -0.3125rem; /* Reduced -8px to -5px */
+    border-radius: 0.875rem 0.875rem 0 0; /* Reduced 20px to 14px */
+    opacity: 0;
+    animation: slideInFromTop 0.3s ease-in forwards;
+    animation-delay: 0.3s;
+}
+
+.tabcontent {
+    display: none;
+    padding: 0.875rem; /* Reduced 20px to 14px */
+    border-radius: 0.875rem; /* Reduced 20px to 14px */
+    background-color: rgba(211, 14, 14, 0);
+    width: 130%;
+    text-align: center;
+}
+
+/* Background image with animation */
+.background-image {
+    background-image: url('./images/home.jpg.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 4.1875rem; 
+    z-index: 0;
+    height: 40vh;
+    position: absolute;
+    top: 34rem; 
+    margin-left: 2.1875rem; 
+    width: 95%;
+    opacity: 0;
+    transform: translateY(2.1875rem);
+    animation: slideUpFadeIn 1s ease-in forwards;
+}
+
+.large-circle {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: #bb0000;
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    z-index: -1;
+}
+
+/* Image inside the circle */
+.circle img {
+    width: 120px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+}
+
+.about-us {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Centering */
+    color: white;
+    text-align: center;
+    font-size: 0.875rem; /* Reduced 16px to 14px */
+    background-color: rgba(0, 0, 0, 0.021);
+    border-radius: 0.625rem; /* Reduced 10px to 8px */
+    font-family: 'Lucida Sans', sans-serif;
+}
+
+/* Animations */
+@keyframes slideInFromTop {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromBottom {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUpFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(2.1875rem); /* Reduced 50px to 35px */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Base Styles for scroll-section */
+.scroll-section {
+    height: auto;
+    max-width: auto; /* Adjust as needed */
+    margin: auto;
+    padding: 2rem;
+    background-color: #fff; /* White background for contrast */
+    border-radius: 10px;
+    margin-top: 50px; /* Separate each section */
+    opacity: 0; /* Start hidden */
+    transform: translateY(30px); /* Start slightly lower */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth transition */
+}
+
+/* Headings */
+.scroll-section h2 {
+    font-size: 2.5rem; /* Larger heading */
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Paragraphs */
+.scroll-section p {
+    font-size: 1.25rem; /* Increased font size */
+    color: #555;
+    line-height: 1.6; /* Improve readability */
+    text-align: center;
+    margin-bottom: 0.875rem;
+}
+
+/* Reveal Effect on Scroll */
+.scroll-section.show {
+    opacity: 1;
+    transform: translateY(0); /* Bring up to position */
+}
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px); /* Starting position */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.scroll-section {
+    display: flex;
+    align-items: center;
+    margin: 60px 0;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 0.6s ease-in-out;
+  }
+  
+  .scroll-section.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .section-image {
+    width: 40%;
+    margin-right: 20px;
+    border-radius: 40px;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .section-image:hover {
+    transform: scale(1.05);
+  }
+  
+  .section-text {
+    width: 60%;
+  }
+  
+  .section-text h2 {
+    font-size: 2rem;
+    color: #333;
+    transition: color 0.4s ease-in;
+  }
+  
+  .section-text h2:hover {
+    color: #007bff;
+  }
+  
+  .section-text p {
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  .content-box {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    border-radius: 0.875rem;
+    padding: 0.875rem;
+  }
+  
+  .content-left,
+  .content-right {
+    width: 50%;
+    text-align: center;
+    color: white;
+    border-right: 2px solid white;
+    padding: 0.4375rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .content-left:hover,
+  .content-right:hover {
+    background-color: #444;
+  }
+  
+  .tablinks {
+    padding: 1rem;
+    font-size: 1.1rem;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .tablinks:hover {
+    background-color: #444;
+    color: white;
+  }
+  

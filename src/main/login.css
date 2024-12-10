@@ -1,0 +1,290 @@
+/* Global Transition for Smooth Effects */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    transition: all 0.3s ease; /* Smooth transition for all elements */
+}
+
+body {
+    background-color: transparent;
+    color: #333;
+    overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4.375rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.875rem;
+    background-color: #f7f7f7;
+    z-index: 1000;
+    animation: slideInFromTop 0.5s ease-out;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.logo img {
+    width: 50px;
+    transition: transform 0.3s ease;
+}
+
+.large-circle {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: #ccc;
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    z-index: -1;
+    animation: scaleUp 1s ease-in-out;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.circle img {
+    width: 120px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    animation: fadeIn 1s ease-in;
+    transition: transform 0.3s ease;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out;
+    transition: all 0.3s ease;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: color 0.3s ease, font-size 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #8b5e3c;
+    font-size: 19px;
+}
+
+.sign-in-btn {
+    padding: 8px 16px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    
+}
+
+.sign-in-btn:hover {
+    background-color: #8b5e3c;
+    transform: scale(1.05);
+}
+
+.login-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    margin-right: 50px;
+    padding: 50px 10%;
+    height: 70vh;
+    position: relative;
+    animation: slideInFromBottom 1s ease-out;
+    transition: margin 0.3s ease, padding 0.3s ease;
+}
+
+.login-left {
+    flex: 1;
+    padding: 50px;
+    text-align: left;
+    animation: fadeIn 1.2s ease-in;
+    transition: padding 0.3s ease;
+}
+
+.login-left h1 {
+    font-size: 48px;
+    margin-bottom: 30px;
+    animation: slideInFromLeft 1s ease-out;
+    transition: font-size 0.3s ease, color 0.3s ease;
+}
+
+.login-left form {
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 1.5s ease-in;
+    transition: all 0.3s ease;
+}
+
+.login-left label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    animation: fadeIn 1.7s ease-in;
+    transition: font-size 0.3s ease;
+}
+
+.login-left input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    border-radius: 50px;
+    font-size: 16px;
+    outline: none;
+    animation: fadeIn 2s ease-in;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.password-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    animation: fadeIn 2.2s ease-in;
+    transition: all 0.3s ease;
+}
+
+.password-container input {
+    flex-grow: 1;
+    padding-right: 50px;
+    animation: fadeIn 2.5s ease-in;
+    transition: padding 0.3s ease, border 0.3s ease;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+    animation: fadeIn 2.7s ease-in;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.login-btn {
+    padding: 15px 40px;
+    border-radius: 50px;
+    background-color: #333;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    animation: bounceIn 1.5s ease-in-out;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #8b5e3c;
+    transform: scale(1.05);
+}
+
+.login-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    animation: fadeIn 1s ease-in-out;
+    transition: padding 0.3s ease;
+}
+
+.login-right img {
+    width: 200%;
+    height: 60%;
+    margin-top: 100px;
+    margin-right: -300px;
+    border-radius: 600px 600px 0 600px;
+    animation: slideInFromRight 1.5s ease-out;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Keyframes for Animations */
+@keyframes slideInFromTop {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromBottom {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,128 @@
+.logo img {
+  width: 50px;
+  margin-left: -25px;
+  transition: transform 0.8s ease-in-out;
+}
+
+.logo img:hover {
+  transform: rotate(360deg);
+}
+
+.large-circle {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: #494949;
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  z-index: -1;
+}
+
+.circle img {
+  width: 120px;
+  height: auto;
+  position: absolute;
+  top: 10px;
+  left: 5px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin-top: 5px;
+  margin-right: -60px;
+  transition: all 0.5s ease-in-out;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  transition: color 0.6s ease-in-out, transform 0.6s ease-in-out;
+  display: inline-block;
+  padding: 5px;
+}
+
+nav ul li a:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+main {
+  margin-top: 5px;
+  background-color: transparent;
+}
+
+main h1 {
+  margin-left: 10pc;
+  color: black;
+  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+}
+
+.mainnav {
+  position: relative;
+  height: 60px;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 1000;
+  color:white;
+}
+
+.profile-image-container {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  object-fit: cover;
+}
+
+.ulo {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  justify-content: center;
+}
+
+.lio {
+  position: relative;
+}
+
+.lio a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 10px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+
+.lio a:hover {
+  color: #ffa500;
+  transform: scale(1.05);
+}

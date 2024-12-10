@@ -1,0 +1,90 @@
+/* Global settings */
+body {
+  font-family: 'Krub', sans-serif;
+  background-color: #ffffff;
+}
+
+.faculty-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.faculty-card {
+  position: relative;
+  width: 300px;
+  height: 450px;
+  border-radius: 10px;
+  background-color: #000000;
+  box-shadow: 0 10px 25px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: white;
+  overflow-y: scroll; /* Allows vertical scrolling */
+}
+
+/* Hide the scrollbar for WebKit browsers */
+.faculty-card::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+/* Hide the scrollbar for Firefox */
+.faculty-card {
+  scrollbar-width: none;
+}
+
+/* Hide the scrollbar for Internet Explorer 10+ */
+.faculty-card {
+  -ms-overflow-style: none;
+}
+
+.card-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+  box-shadow: 0 0 0 5px #151515, inset 0 0 0 5px #000000;
+}
+
+/* Title */
+.faculty-card h3 {
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* List styling */
+.ful {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+}
+
+.fli {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/* Delete button */
+.delete-btn {
+  background-color: crimson;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+  background-color: darkred;
+}

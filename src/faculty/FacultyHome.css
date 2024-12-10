@@ -1,0 +1,315 @@
+
+
+main {
+    margin-top: 5px;
+    background-color: transparent;
+}
+
+main h1 {
+    margin-left: 0pc;
+    color: rgb(255, 255, 255);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.profile img {
+    margin-right: -40px;
+    margin-top: 5px;
+    height: 120px;
+    transition: transform 0.5s ease;
+}
+
+.profile img:hover {
+    transform: scale(1.2);
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 65%;
+    gap: 10px;
+    padding: 0px;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    margin-left: 115px;
+}
+
+.container:hover {
+    
+    transform: scale(1.02);
+}
+
+.left, .right {
+    flex: 1;
+    border-radius: 15px;
+    border: 2px solid black;
+    height: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.5s ease, transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.left:hover, .right:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.left {
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.progress-circle {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    transition: transform 0.5s ease;
+}
+
+.text {
+    font-size: 17px;
+    text-align: left;
+    max-width: 250px;
+}
+
+.text h2 {
+    margin-top: 0;
+    font-size: 23px;
+    margin-bottom: 60px;
+    transition: color 0.3s ease;
+}
+
+.text span {
+    font-weight: bold;
+    font-size: 20px;
+    transition: color 0.3s ease;
+    color: rgb(211, 211, 211);
+    text-align: left;
+}
+.left h2{
+    color:white;
+}
+
+.text span:hover {
+    color: darkgoldenrod;
+}
+
+.right h2 {
+    color:white;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.right h2:hover {
+    transform: translateX(10px);
+}
+
+.right ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(170, 167, 167);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.right ul li {
+    margin-bottom: 10px;
+}
+
+.right ul li::before {
+    content: '•';
+    color: white;
+    margin-right: 8px;
+    transition: color 0.3s ease;
+}
+
+.right ul li:hover {
+    transform: translateX(5px);
+}
+
+.upcoming-classes, .important-days {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.important-days {
+    margin-left: 100px;
+}
+
+.upcoming-classes {
+    width: 100%;
+    max-width: 1300px;
+}
+
+.class-box {
+    height: 300px;
+}
+
+.class-box, .important-box {
+    background-color: transparent;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid black;
+    text-align: center;
+    width: 100%;
+    max-width: 1300px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.class-box:hover, .important-days:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.class-box h1 {
+    margin-top: 100px;
+    margin-right: 400px;
+}
+
+.important-days h1 {
+    color: rgb(255, 255, 255);
+    margin-top: 30px;
+    margin-right: 600px;
+}
+
+.class-box h1, .important-box h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.important-box {
+    margin-left: 700px;
+    margin-top: -200px;
+    color: white;
+    width: fit-content;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.class-info {
+    font-size: 25px;
+    margin: 5px 10px;
+    margin-left: 800px;
+    margin-top: -230px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 180px;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.class-box img {
+    display: grid;
+    margin-left: 35px;
+    margin-top: -115px;
+}
+
+.important-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.important-days {
+    background-color: rgb(0, 0, 0);
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 100%;
+    height: 300px;
+    max-width: 1300px;
+    margin-left: 0px;
+}
+
+.important-days h1 {
+    margin-left: 600px;
+}
+
+.important-days img {
+    margin-top: -120px;
+    margin-right: 800px;
+}
+
+.important-box li {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0);
+    -webkit-backdrop-filter: blur(10px);
+    color: rgb(0, 0, 0);
+    border: 2px solid rgba(180, 144, 144, 0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    z-index: 1;
+}
+
+.left, .right, .class-box, .important-box, .important-days {
+    background-color: rgb(0, 0, 0);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    z-index: 0;
+    margin-bottom: -100px;
+    justify-content: center;
+}
+
+.left:hover, .right:hover, .class-box:hover, .important-box:hover, .important-days:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+.time  {
+    width: 200px; 
+    filter: invert(1) brightness(2);
+}
+.important-box ul {
+  list-style: none; /* Remove default list styling */
+  padding: 0;       /* Remove padding */
+  margin-top: -40px;        /* Remove margin */
+
+}
+
+.important-box li {
+  border-bottom: 1px solid #dcdcdc; /* Optional: Add a separator line */
+  padding: 5px 0;  /* Add vertical spacing between items */
+  font-size: 16px; /* Adjust font size as needed */
+  text-align: left; /* Ensure text aligns properly */
+  margin-bottom: 0;
+}
+
+/* Other styles remain unchanged. */
+.calender  {
+    width: 200px; 
+    filter: invert(1) brightness(2);
+   
+}

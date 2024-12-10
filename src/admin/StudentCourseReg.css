@@ -1,0 +1,96 @@
+.student-course-reg-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  
+  .student-course-reg-title {
+    text-align: center;
+    color: #333;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+  }
+  
+  .student-course-reg-message {
+    color: red;
+    text-align: center;
+  }
+  
+  .student-course-reg-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .student-course-reg-input-group {
+    margin-bottom: 20px;
+  }
+  
+  .student-course-reg-label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .student-course-reg-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .student-course-reg-sections {
+    display: grid;
+    gap: 20px;
+  }
+  
+  .student-course-reg-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .student-course-reg-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .student-course-reg-card-title {
+    color: #333;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  
+  .student-course-reg-card-info {
+    margin-bottom: 10px;
+  }
+  
+  .student-course-reg-card-label {
+    font-size: 14px;
+  }
+  
+  .student-course-reg-card-select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .student-course-reg-submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .student-course-reg-submit:hover {
+    background-color: #555;
+  }
+  
